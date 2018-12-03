@@ -1,8 +1,14 @@
 changes = [line.rstrip('\n') for line in open('input.txt')]
 
 start = 0
+freq = [0]
 
-for i in range(len(changes)):
-    start += int(changes[i])
-
-print(start)
+while True:
+    for i in range(len(changes)):
+        start += int(changes[i])
+        print("yep still going")
+        if not freq.__contains__(start):
+            freq.append(start)
+        else:
+            print(start)
+            exit(0)
