@@ -6,7 +6,6 @@ freq = [0]
 while True:
     for i in range(len(changes)):
         start += int(changes[i])
-        print("yep still going")
         if not freq.__contains__(start):
             freq.append(start)
         else:
